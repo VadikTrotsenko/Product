@@ -70,7 +70,7 @@ ul li {
 
 /* menu */
 
-.menu-item {
+.menu__item {
   display: block;
   padding: 12px 24px;
   color: #333;
@@ -80,15 +80,15 @@ ul li {
   text-decoration: none;
   transition-duration: .25s;
 }
-.menu-item:hover {
+.menu__item:hover {
   background-color: #CFD8DC;
 }
 
-#menu-toggle {
+#menu__toggle {
   opacity: 0;
 }
 
-.menubox {
+.menu__box {
   display: block;
   position: fixed;
   visibility: hidden;
@@ -104,7 +104,7 @@ ul li {
   transition-duration: .25s;
 }
 
-.menu-btn {
+.menu__btn {
   display: none;
   align-items: center;
   position: absolute;
@@ -116,9 +116,9 @@ ul li {
   z-index: 1;
 }
  
-.menu-btn > span,
-.menu-btn > span::before,
-.menu-btn > span::after {
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
   display: block;
   position: absolute;
   width: 100%;
@@ -126,27 +126,27 @@ ul li {
   background-color: #616161;
   transition-duration: .25s;
 }
-.menu-btn > span::before {
+.menu__btn > span::before {
   content: '';
   top: -8px;
 }
-.menu-btn > span::after {
+.menu__btn > span::after {
   content: '';
   top: 8px;
 }
 
-#menu-toggle:checked ~ .menu-btn > span {
+#menu__toggle:checked ~ .menu__btn > span {
   transform: rotate(45deg);
 }
-#menu-toggle:checked ~ .menu-btn > span::before {
+#menu__toggle:checked ~ .menu__btn > span::before {
   top: 0;
   transform: rotate(0);
 }
-#menu-toggle:checked ~ .menu-btn > span::after {
+#menu__toggle:checked ~ .menu__btn > span::after {
   top: 0;
   transform: rotate(90deg);
 }
-#menu-toggle:checked ~ .menubox {
+#menu__toggle:checked ~ .menu__box {
   visibility: visible;
   left: 0;
 }
@@ -394,7 +394,7 @@ ul li {
   margin-bottom: 64px;
 }
 
-.benefits__title__text {
+.benefits__text {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -414,7 +414,7 @@ ul li {
   width: 22%;
 }
 
-.benefits__cards__container {
+.benefits__container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -422,7 +422,7 @@ ul li {
   margin-bottom: 33px;
 }
 
-.benefits-card__image {
+.benefits__image {
   margin-bottom: 19px;
   max-width: 50px;
 }
@@ -438,7 +438,7 @@ ul li {
 }
 
 
-.benefits-card__description {
+.benefits__description {
   max-width: 240px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -456,7 +456,7 @@ ul li {
   padding-left: 32px;
 }
 
-.sing-up__button {
+.sing__button {
   padding: 15px 32px 14px 34px;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -466,7 +466,7 @@ ul li {
   color: #FFFFFF;
 }
 
-.sing-up__button:hover {
+.sing__button:hover {
   cursor: pointer;
   opacity: 0.8;
 }
@@ -1216,7 +1216,7 @@ ul li {
     flex-direction: column;
   }
 
-  .benefits-card__description {
+  .benefits__description {
     max-width: 146px;
   }
 
@@ -1225,7 +1225,7 @@ ul li {
     margin-left: auto;
   }
 
-  .menu-btn {
+  .menu__btn {
     display: flex;
   }
 
@@ -1237,7 +1237,7 @@ ul li {
     margin-right: 0;
   }
 
-  .benefits__cards__container {
+  .benefits__container {
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -1371,7 +1371,7 @@ ul li {
 
 @media (max-width: 768px) {
 
-  .benefits__cards__container {
+  .benefits__container {
     flex-direction: column;
     width: 99%;
     margin-bottom: 15px;
@@ -1391,7 +1391,7 @@ ul li {
 
   
 
-  .benefits-card__description {
+  .benefits__description {
     width: 80%;
 
   }
@@ -1411,7 +1411,7 @@ ul li {
     font-size: 28px;
   }
 
-  .benefits__title__text {
+  .benefits__text {
     font-size: 28px;
   } 
 
@@ -1441,7 +1441,7 @@ ul li {
     margin-bottom: 30px;
   }
 
-  .benefits__title__text {
+  .benefits__text {
     width: 90%;
     padding: 0;
   }
@@ -1451,7 +1451,7 @@ ul li {
     padding-bottom: 70px;
   }
 
-  .benefits__cards__container {
+  .benefits__container {
     flex-direction: column;
     align-items: center;
     width: 99%;
@@ -1465,7 +1465,7 @@ ul li {
     margin-bottom: 30px;
   }
 
-  .benefits-card__description {
+  .benefits__description {
     width: 80%;
   }
 
