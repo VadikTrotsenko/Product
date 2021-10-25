@@ -275,10 +275,31 @@ ul li {
   width: 41%;
 }
 
+.introduction__image {
+  max-width: 600px;
+  max-height: 555px;
+}
+
+.management__image {
+  max-width: 539px;
+  max-height: 478px;
+}
+
+.customer__image {
+  max-width: 543px;
+  max-height: 500px;
+}
+
 .introduction-container__img {
   max-width: 600px;
   max-height: 556px;
 }
+
+.collaborative__image {
+  max-width: 542px;
+  max-height: 452px;
+}
+
 
 .introduction-container__buttons {
   display: flex;
