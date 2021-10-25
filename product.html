@@ -2,60 +2,71 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product</title>
     <link rel="stylesheet" type="text/css" href="./product.style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
   </head>
   <body>
   <header class="header">
-    <div class='header__logo logo'>
-      <span class='logo__image'>
-        <svg width="40" height="37" viewBox="0 0 40 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M3.13307 34.4587C1.40988 34.4587 1.6082e-07 33.0488 1.49105e-07 31.3256L7.46349e-08 20.372L7.88626 20.372L7.88626 20.3598L12.6263 20.3598C13.8482 20.3285 14.8821 19.2633 14.8821 18.01C14.8821 16.7255 13.8168 15.6602 12.5323 15.6602L6.26614 15.6602L6.26614 15.6622L4.26148e-08 15.6622L2.13006e-08 12.5272C9.58529e-09 10.804 1.40988 9.3941 3.13307 9.3941L12.5323 9.3941C14.9134 9.3941 16.9499 10.24 18.6104 11.9319C20.3023 13.5924 21.1482 15.6289 21.1482 18.01C21.1482 20.3598 20.3336 22.3963 18.6731 24.0569C17.0126 25.7174 15.0074 26.5947 12.6576 26.626L6.26614 26.626L6.26614 31.3256C6.26614 33.0488 4.85626 34.4587 3.13307 34.4587Z" fill="#02BC6B"/>
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M25.0975 5.7578C28.5589 9.11993 30.3031 13.3073 30.3031 18.0672C30.3031 22.7473 28.6319 26.9307 25.2239 30.3034L20.3852 25.7508C22.5047 23.6533 23.545 21.128 23.545 18.0672C23.545 14.9832 22.4734 12.4619 20.3031 10.3538L25.0975 5.7578Z" fill="#02897A"/>
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M32.5055 -3.14562e-08C37.4911 4.97781 39.9999 11.1499 39.9999 18.2338C39.9999 25.2071 37.5922 31.3753 32.6884 36.3638L28.0186 31.8009C31.6715 28.085 33.4614 23.5781 33.4614 18.2338C33.4614 12.8358 31.6111 8.33276 27.8787 4.60616L32.5055 -3.14562e-08Z" fill="#035B81"/>
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M-1.14326e-05 26.6524L6.26613 26.6524L6.26613 31.326C6.26613 33.0492 4.85625 34.4591 3.13306 34.4591C1.40987 34.4591 -1.13891e-05 33.0492 -1.14009e-05 31.326L-1.14326e-05 26.6524Z" fill="#028E37"/>
+    <div class="header__wrapper">
+      <div class='header__logo logo'>
+        <span class='logo__image'>
+          <svg width="40" height="37" viewBox="0 0 40 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.13307 34.4587C1.40988 34.4587 1.6082e-07 33.0488 1.49105e-07 31.3256L7.46349e-08 20.372L7.88626 20.372L7.88626 20.3598L12.6263 20.3598C13.8482 20.3285 14.8821 19.2633 14.8821 18.01C14.8821 16.7255 13.8168 15.6602 12.5323 15.6602L6.26614 15.6602L6.26614 15.6622L4.26148e-08 15.6622L2.13006e-08 12.5272C9.58529e-09 10.804 1.40988 9.3941 3.13307 9.3941L12.5323 9.3941C14.9134 9.3941 16.9499 10.24 18.6104 11.9319C20.3023 13.5924 21.1482 15.6289 21.1482 18.01C21.1482 20.3598 20.3336 22.3963 18.6731 24.0569C17.0126 25.7174 15.0074 26.5947 12.6576 26.626L6.26614 26.626L6.26614 31.3256C6.26614 33.0488 4.85626 34.4587 3.13307 34.4587Z" fill="#02BC6B"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M25.0975 5.7578C28.5589 9.11993 30.3031 13.3073 30.3031 18.0672C30.3031 22.7473 28.6319 26.9307 25.2239 30.3034L20.3852 25.7508C22.5047 23.6533 23.545 21.128 23.545 18.0672C23.545 14.9832 22.4734 12.4619 20.3031 10.3538L25.0975 5.7578Z" fill="#02897A"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M32.5055 -3.14562e-08C37.4911 4.97781 39.9999 11.1499 39.9999 18.2338C39.9999 25.2071 37.5922 31.3753 32.6884 36.3638L28.0186 31.8009C31.6715 28.085 33.4614 23.5781 33.4614 18.2338C33.4614 12.8358 31.6111 8.33276 27.8787 4.60616L32.5055 -3.14562e-08Z" fill="#035B81"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M-1.14326e-05 26.6524L6.26613 26.6524L6.26613 31.326C6.26613 33.0492 4.85625 34.4591 3.13306 34.4591C1.40987 34.4591 -1.13891e-05 33.0492 -1.14009e-05 31.326L-1.14326e-05 26.6524Z" fill="#028E37"/>
+          </svg>          
+        </span>
+        <span class="logo__text">
+          <a>Product</a>
+        </span>
+      </div>
+      <span class="header__menu">
+        <svg width="28" height="31" viewBox="0 0 28 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3.5 15.5H24.5" stroke="#173A56" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M3.5 7.75H24.5" stroke="#173A56" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M3.5 23.25H24.5" stroke="#173A56" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>        
+      </span>
+        <ul class="header__nav nav">
+          <li class="nav__item _active-button">
+            <a class="nav__link">Product</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link">Customers</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link">Pricing</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link">Resources</a>
+          </li>
+        </ul>
+        <a class="header__auth">Sign in</a>
+        <a class="header__auth _primary-btn">Sign up</a>
+      <div class="header__theme theme">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="32" height="32" rx="16" fill="#F3F3F3"/>
+          <path d="M16 26C21.514 26 26 21.514 26 16C26 10.486 21.514 6 16 6C10.486 6 6 10.486 6 16C6 21.514 10.486 26 16 26ZM16 8C20.411 8 24 11.589 24 16C24 20.411 20.411 24 16 24C11.589 24 8 20.411 8 16C8 11.589 11.589 8 16 8Z" fill="#02897A"/>
+          <path d="M23 16C23 12.134 19.865 9 16 9V23C19.865 23 23 19.866 23 16Z" fill="#02897A"/>
         </svg>          
-      </span>
-      <span class="logo__text">
-        <a>Product</a>
-      </span>
-    </div>
-      <ul class="header__nav nav">
-        <li class="nav__item _active-button">
-          <a class="nav__link">Product</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link">Customers</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link">Pricing</a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link">Resources</a>
-        </li>
-      </ul>
-      <a class="header__auth">Sign in</a>
-      <a class="header__auth _primary-btn">Sign up</a>
-    <div class="header__theme theme">
-      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="32" height="32" rx="16" fill="#F3F3F3"/>
-        <path d="M16 26C21.514 26 26 21.514 26 16C26 10.486 21.514 6 16 6C10.486 6 6 10.486 6 16C6 21.514 10.486 26 16 26ZM16 8C20.411 8 24 11.589 24 16C24 20.411 20.411 24 16 24C11.589 24 8 20.411 8 16C8 11.589 11.589 8 16 8Z" fill="#02897A"/>
-        <path d="M23 16C23 12.134 19.865 9 16 9V23C19.865 23 23 19.866 23 16Z" fill="#02897A"/>
-      </svg>          
+      </div>
     </div>
   </header>
   <main class='main'>
     <div class="intro">
       <div class="intro_content content">
-        <h1 class="introduction__title__value">Work at the speed<br>
+        <h1 class="introduction__title__value">Work at the speed
           of thought</h1>
-        <div class="introduction-container__description">
-          <p class="introduction__description__value">
-            Tools, tutorials, design and innovation experts, all<br> in one place! The most intuitive way to imagine<br> your next user experience.
-          </p>
-        </div>
+        <p class="introduction__description__value">
+          Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.
+        </p>
         <div class="introduction-container__buttons">
           <a class="get__button _primary-btn">Get started</a>
           <div class="watch__button">
@@ -70,11 +81,13 @@
           </div>
         </div>
       </div>
-      <div class="introduction-container__image">
-        <img src="./img/amico.svg" alt="">
-      </div>
+      <picture class="introduction__image">
+        <source srcset="./img/01320.png" media="(max-width: 786px)">
+        <source srcset="./img/01768.png" media="(max-width: 1024px)">
+        <img alt="" src="./img/amico.svg">
+      </picture>
     </div>
-    <div>
+    <!-- <div> -->
     <div class='benefits'>
       <div class="benefits__title">
         <h1 class="benefits__title__text">Product  was Built Specifically 
@@ -103,12 +116,8 @@
               </defs>
             </svg>          
           </div>
-          <div class="benefits-card__title">
-            <h3 class="card__title">First click tests</h3>
-          </div>
-          <div class="benefits-card__description">
-            <p>While most people enjoy casino gambling,</p>
-          </div>
+          <h3 class="card__title">First click tests</h3>
+          <p class="benefits-card__description">While most people enjoy casino gambling,</p>
         </div>
         <div class="benefits__cards benefits-card">
           <div class="benefits-card__image">
@@ -132,12 +141,8 @@
               </defs>
             </svg>                
           </div>
-          <div class="benefits-card__title">
-            <h3>Design surveys</h3>
-          </div>
-          <div class="benefits-card__description">
-            <p>Sports betting, lottery and bingo playing for the fun</p>
-          </div>
+          <h3 class="card__title">Design surveys</h3>
+          <p class="benefits-card__description">Sports betting, lottery and bingo playing for the fun</p>
         </div>
         <div class="benefits__cards benefits-card">
           <div class="benefits-card__image">
@@ -161,12 +166,8 @@
               </defs>
             </svg>                  
           </div>
-          <div class="benefits-card__title">
-            <h3>Preference tests</h3>
-          </div>
-          <div class="benefits-card__description">
-            <p>The Myspace page defines the individual.</p>
-          </div>
+          <h3 class="card__title">Preference tests</h3>
+          <p class="benefits-card__description">The Myspace page defines the individual.</p>
         </div>
         <div class="benefits__cards benefits-card">
           <div class="benefits-card__image">
@@ -190,12 +191,8 @@
               </defs>
             </svg>                   
           </div>
-          <div class="benefits-card__title">
-            <h3>Five second tests</h3>
-          </div>
-          <div class="benefits-card__description">
-            <p>Personal choices and the overall personality of the person.</p>
-          </div>
+          <h3 class="card__title">Five second tests</h3>
+          <p class="benefits-card__description">Personal choices and the overall personality of the person.</p>
         </div>
       </div>
       <div class="benefits__button">
@@ -203,32 +200,34 @@
       </div>
     </div>
     <div class='management'>
-      <div class='management__content'>
-        <div class='management__info'>
-          <h3 class='management__subtitle'>Effortless Validation for</h3>
-          <h1 class='management__title'>Management</h1>
-          <p class='management__description'>
-            The Myspace page defines the individual, his or her characteristics, traits,
-             personal choices and the overall personality of the person.
-          </p>
-          <h3 class='management__subtitle'>Accessory makers</h3>
-          <p class='management__description'>
-            While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun
-          </p>
-          <h3 class='management__subtitle'>Alterationists</h3>
-          <p class='management__description'>
-            If you are looking for a new way to promote your business that won’t cost you more money,
-          </p>
-        </div>
+      <div class='management__info'>
+        <h3 class='management__subtitle'>Effortless Validation for</h3>
+        <h1 class='management__title'>Management</h1>
+        <p class='management__description'>
+          The Myspace page defines the individual, his or her characteristics, traits,
+            personal choices and the overall personality of the person.
+        </p>
+        <h3 class='management__subtitle'>Accessory makers</h3>
+        <p class='management__description'>
+          While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun
+        </p>
+        <h3 class='management__subtitle'>Alterationists</h3>
+        <p class='management__description'>
+          If you are looking for a new way to promote your business that won’t cost you more money,
+        </p>
       </div>
-      <div class='management__image'>
-        <img src="./img/managment.png"alt="">
-      </div>
+      <picture class="introduction__image">
+        <source srcset="./img/02320.png" media="(max-width: 786px)">
+        <source srcset="./img/02768.png" media="(max-width: 1024px)">
+        <img alt="" src="./img/managment.png">
+      </picture>
     </div>
     <div class='customer'>
-      <div class='customer__image'>
-        <img src="./img/customer.png"alt="">
-      </div>
+      <picture class="introduction__image">
+        <source srcset="./img/03320.png" media="(max-width: 786px)">
+        <source srcset="./img/03768.png" media="(max-width: 1024px)">
+        <img alt="" src="./img/customer.png">
+      </picture>
       <div class='customer__info'>
         <h3 class='customer__subtitle'>Easier decision making for</h3>
         <h1 class='customer__title'>Customer Support</h1>
@@ -259,7 +258,7 @@
             </svg>                
           </span>
           <p>
-            We will only switch you to energy companies <br> that we trust and will treat you right
+            We will only switch you to energy companies that we trust and will treat you right
           </p>
         </div>
         <div class="customer__paragraph">
@@ -278,26 +277,26 @@
       </div>
     </div>
     <div class='collaborative'>
-      <div class='collaborative__content'>
-        <div class='collaborative__info'>
-          <h3 class='collaborative__subtitle'>Optimisation for</h3>
-          <h1 class='collaborative__title'>Collaborative</h1>
-          <p class='collaborative__description'>
-            Few would argue that, despite the advancements of feminism over the past three decades, women still face a double standard when it comes to their behavior. 
-          </p>
-          <h3 class='collaborative__subtitle'>Accessory makers</h3>
-          <p class='collaborative__description'>
-            While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun
-          </p>
-          <h3 class='collaborative__subtitle'>Alterationists</h3>
-          <p class='collaborative__description'>
-            If you are looking for a new way to promote your business that won’t cost you more money,
-          </p>
-        </div>
+      <div class='collaborative__info'>
+        <h3 class='collaborative__subtitle'>Optimisation for</h3>
+        <h1 class='collaborative__title'>Collaborative</h1>
+        <p class='collaborative__description'>
+          Few would argue that, despite the advancements of feminism over the past three decades, women still face a double standard when it comes to their behavior. 
+        </p>
+        <h3 class='collaborative__subtitle'>Accessory makers</h3>
+        <p class='collaborative__description'>
+          While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun
+        </p>
+        <h3 class='collaborative__subtitle'>Alterationists</h3>
+        <p class='collaborative__description'>
+          If you are looking for a new way to promote your business that won’t cost you more money,
+        </p>
       </div>
-      <div class='collaborative__image'>
-        <img src="./img/collaborative.png"alt="">
-      </div>
+      <picture class="introduction__image">
+        <source srcset="./img/04320.png" media="(max-width: 786px)">
+        <source srcset="./img/04768.png" media="(max-width: 1024px)">
+        <img alt="" src="./img/collaborative.png">
+      </picture>
     </div>
     <div class='process'>
       <div class='process__content'>
@@ -341,21 +340,21 @@
       <div class="strategies__cards">
         <div class="strategies__card">
           <div class="strategies__image">
-            <img  src="./img/image bg.png" alt="">     
+            <img class='strategies_icon'src="./img/image bg.png" alt="">     
           </div>
           <p class="strategies__date">By Wahid Ari |  03 March 2019</p>
           <h3 class="strategies__text">Increasing Prosperity With Positive Thinking</h3>
         </div>
         <div class="strategies__card">
           <div class="strategies__image">
-            <img src="./img/image.png" alt="">         
+            <img class='strategies_icon' src="./img/image.png" alt="">         
           </div>
           <p class="strategies__date">By Wahid Ari | 03 March 2019</p>
           <h3 class="strategies__text">Motivation Is The First Step To Success</h3>
         </div>
         <div class="strategies__card">
           <div class="strategies__image">
-            <img src="./img/image (1).png" alt="">              
+            <img class='strategies_icon' src="./img/image (1).png" alt="">              
           </div>
           <p class="strategies__date">By Wahid Ari | 03 March 2019</p>
           <h3 class="strategies__text">Success Steps For Your Personal Or Business</h3>
@@ -370,7 +369,146 @@
       </div>
     </div>
     <div class="price">
+      <h3 class="price__title">Price Table</h3>
+      <p class="price__description">We offer competitive price</p>
+      <div class="price__cards">
+        <div class="price__card">
+          <h1 class="price__subtitle">Free</h1>
+          <p class="price__subdescription">Brief price description</p>
+          <div class="price__cost">
+            <h1 class="price__value">0</h1>
+            <div class="price__info">
+              <h4 class="price__symbol">$</h4>
+              <p class="price__month">Per / month</p>
+            </div>
+          </div>
+          <div class="price__list">
+          <ul>
+            <li class="price__item">Only 2 Operators</li>
+            <li class="price__item">Notifications</li>
+            <li class="price__item">Landing Pages</li>
+          </ul>
+          </div>
+          <a class="price__btn _primary-btn">Order Now</a>
+        </div>
+        <div class="price__card">
+          <h1 class="price__subtitle">Standard</h1>
+          <p class="price__subdescription">Brief price description</p>
+          <div class="price__cost">
+            <h1 class="price__value">5</h1>
+            <div class="price__info">
+              <h4 class="price__symbol">$</h4>
+              <p class="price__month">Per / month</p>
+            </div>
+          </div>
+          <div class="price__list">
+          <ul>
+            <li class="price__item">5+ Operators</li>
+            <li class="price__item">Notifications</li>
+            <li class="price__item">Landing Pages</li>
+          </ul>
+          </div>
+          <a class="price__btn _primary-btn">Order Now</a>
+        </div>
+        <div class="price__card">
+          <h1 class="price__subtitle">Premium</h1>
+          <p class="price__subdescription">Brief price description</p>
+          <div class="price__cost">
+            <h1 class="price__value">10</h1>
+            <div class="price__info">
+              <h4 class="price__symbol">$</h4>
+              <p class="price__month">Per / month</p>
+            </div>
+          </div>
+          <div class="price__list">
+            <ul>
+              <li class="price__item">10+ Operators</li>
+              <li class="price__item">Notifications</li>
+              <li class="price__item">Landing Pages</li>
+            </ul>
+          </div>
+          <a class="price__btn _primary-btn">Order Now</a>
+        </div>
+      </div>
     </div>
+    <!-- </div> -->
+    <form class="form">
+      <h3 class="form__title">Send a message</h3>
+      <input class="form__input" type=search placeholder="Your Name">
+      <input class="form__input" type=search placeholder="Your Email">
+      <textarea class="form__area" name="comment" cols="40" rows="3" placeholder="Your Message"></textarea>
+        <a class="form__btn _primary-btn">Send</a>
+    </form>
   </main>
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <div class="footer__content">
+        <div class='footer__socials'>
+          <div class='footer__logo logo'>
+            <span class='footer__image'>
+              <svg width="32" height="29" viewBox="0 0 40 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.13307 34.4587C1.40988 34.4587 1.6082e-07 33.0488 1.49105e-07 31.3256L7.46349e-08 20.372L7.88626 20.372L7.88626 20.3598L12.6263 20.3598C13.8482 20.3285 14.8821 19.2633 14.8821 18.01C14.8821 16.7255 13.8168 15.6602 12.5323 15.6602L6.26614 15.6602L6.26614 15.6622L4.26148e-08 15.6622L2.13006e-08 12.5272C9.58529e-09 10.804 1.40988 9.3941 3.13307 9.3941L12.5323 9.3941C14.9134 9.3941 16.9499 10.24 18.6104 11.9319C20.3023 13.5924 21.1482 15.6289 21.1482 18.01C21.1482 20.3598 20.3336 22.3963 18.6731 24.0569C17.0126 25.7174 15.0074 26.5947 12.6576 26.626L6.26614 26.626L6.26614 31.3256C6.26614 33.0488 4.85626 34.4587 3.13307 34.4587Z" fill="#02BC6B"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M25.0975 5.7578C28.5589 9.11993 30.3031 13.3073 30.3031 18.0672C30.3031 22.7473 28.6319 26.9307 25.2239 30.3034L20.3852 25.7508C22.5047 23.6533 23.545 21.128 23.545 18.0672C23.545 14.9832 22.4734 12.4619 20.3031 10.3538L25.0975 5.7578Z" fill="#02897A"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M32.5055 -3.14562e-08C37.4911 4.97781 39.9999 11.1499 39.9999 18.2338C39.9999 25.2071 37.5922 31.3753 32.6884 36.3638L28.0186 31.8009C31.6715 28.085 33.4614 23.5781 33.4614 18.2338C33.4614 12.8358 31.6111 8.33276 27.8787 4.60616L32.5055 -3.14562e-08Z" fill="#035B81"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M-1.14326e-05 26.6524L6.26613 26.6524L6.26613 31.326C6.26613 33.0492 4.85625 34.4591 3.13306 34.4591C1.40987 34.4591 -1.13891e-05 33.0492 -1.14009e-05 31.326L-1.14326e-05 26.6524Z" fill="#028E37"/>
+              </svg>          
+            </span>
+            <span class="logo__text">
+              <a>Product</a>
+            </span>
+          </div>
+          <div class="footer__social">
+            <span class="footer__icon"> 
+              <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20.0161" r="20" fill="#EDFFFC"/>
+                <path d="M25 10.0161H15C12.2386 10.0161 10 12.2547 10 15.0161V25.0161C10 27.7775 12.2386 30.0161 15 30.0161H25C27.7614 30.0161 30 27.7775 30 25.0161V15.0161C30 12.2547 27.7614 10.0161 25 10.0161Z" stroke="#02897A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M24 19.3859C24.1234 20.2182 23.9812 21.0681 23.5937 21.8149C23.2062 22.5617 22.5931 23.1673 21.8416 23.5456C21.0901 23.9239 20.2384 24.0555 19.4077 23.9219C18.5771 23.7882 17.8097 23.396 17.2148 22.8011C16.6199 22.2062 16.2277 21.4388 16.094 20.6081C15.9604 19.7775 16.092 18.9258 16.4703 18.1743C16.8485 17.4228 17.4541 16.8097 18.2009 16.4222C18.9477 16.0347 19.7977 15.8925 20.63 16.0159C21.4789 16.1418 22.2648 16.5374 22.8716 17.1442C23.4785 17.7511 23.8741 18.537 24 19.3859Z" stroke="#02897A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M25.5 14.5161H25.51" stroke="#02897A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>              
+            </span>
+            <span class="footer__icon">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="20" fill="#EDFFFC"/>
+                <path d="M26 10H23C21.6739 10 20.4021 10.5268 19.4645 11.4645C18.5268 12.4021 18 13.6739 18 15V18H15V22H18V30H22V22H25L26 18H22V15C22 14.7348 22.1054 14.4804 22.2929 14.2929C22.4804 14.1054 22.7348 14 23 14H26V10Z" stroke="#02897A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>              
+            </span>
+            <span class="footer__icon">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="20" fill="#EDFFFC"/>
+                <path d="M31 11.0101C30.0424 11.6855 28.9821 12.2022 27.86 12.5401C27.2577 11.8476 26.4573 11.3567 25.567 11.134C24.6767 10.9112 23.7395 10.9673 22.8821 11.2945C22.0247 11.6218 21.2884 12.2045 20.773 12.9638C20.2575 13.7231 19.9877 14.6224 20 15.5401V16.5401C18.2426 16.5856 16.5013 16.1959 14.931 15.4055C13.3607 14.6151 12.0103 13.4487 11 12.0101C11 12.0101 7 21.0101 16 25.0101C13.9405 26.408 11.4872 27.109 9 27.0101C18 32.0101 29 27.0101 29 15.5101C28.9991 15.2315 28.9723 14.9537 28.92 14.6801C29.9406 13.6735 30.6608 12.4028 31 11.0101V11.0101Z" stroke="#02897A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>                           
+            </span>
+          </div>
+        </div>
+        <div class="footer__resource">
+          <ul>
+            <li class="footer__item _active_list">Resource</li>
+            <li class="footer__item">About Us</li>
+            <li class="footer__item">Blog</li>
+            <li class="footer__item">Contact</li>
+            <li class="footer__item">FAQ</li>
+          </ul>
+        </div>
+        <div class="footer__legal">
+          <ul>
+            <li class="footer__item _active_list">Legal Stuff</li>
+            <li class="footer__item">Disclaimer</li>
+            <li class="footer__item">Financing</li>
+            <li class="footer__item">Privacy Policy</li>
+            <li class="footer__item">Terms of Service</li>
+          </ul>
+        </div>
+        <div class="footer__form">
+          <h3 class="footer__title">knowing you're always on the best energy deal.</h3>
+          <input class="footer__input" type=search placeholder="">
+          <a class="footer__btn _primary-btn">Sign up Now</a>
+        </div>
+      </div>
+      <div class="footer__description">
+        <p>Made With Love By Figmaland All Right Reserved 
+      </div>
+      </p>
+    </div>
+  </footer>
   </body>
 </html>
