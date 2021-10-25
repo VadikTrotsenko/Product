@@ -178,6 +178,7 @@ ul li {
 }
 
 .header__logo:hover {
+  cursor: pointer;
   opacity: 0.8;
 }
 
@@ -213,6 +214,7 @@ ul li {
 }
 
 .nav__item:hover {
+  cursor: pointer;
   opacity: 0.8;
 }
 
@@ -236,10 +238,12 @@ ul li {
 }
 
 .header__auth:hover {
+  cursor: pointer;
   opacity: 0.8;
 }
 
 .header__theme:hover {
+  cursor: pointer;
   opacity: 0.8;
 }
 
@@ -336,6 +340,7 @@ ul li {
 }
 
 .watch__button:hover {
+  cursor: pointer;
   opacity: 0.8;
 }
 
@@ -354,6 +359,7 @@ ul li {
 }
 
 .get__button:hover {
+  cursor: pointer;
   opacity: 0.8;
 }
 
@@ -460,6 +466,7 @@ ul li {
 }
 
 .sing-up__button:hover {
+  cursor: pointer;
   opacity: 0.8;
 }
 
@@ -704,6 +711,7 @@ ul li {
 }
 
 .process__btn:hover {
+  cursor: pointer;
   opacity: 0.8;
 }
 
@@ -772,6 +780,7 @@ ul li {
 }
 
 .strategies__text:hover {
+  cursor: pointer;
   color: #02897A;
 }
 
@@ -872,6 +881,7 @@ ul li {
 }
 
 .price__card:hover .price__btn {
+  cursor: pointer;
   background: white;
   color: #02897A;
 }
@@ -1044,6 +1054,7 @@ ul li {
 }
 
 .form__btn:hover {
+  cursor: pointer;
   opacity: 0.8;
 }
 
@@ -1082,6 +1093,7 @@ ul li {
 }
 
 .footer__logo:hover {
+  cursor: pointer;
   opacity: 0.8;
 }
 
@@ -1094,6 +1106,7 @@ ul li {
 }
 
 .footer__icon:hover {
+  cursor: pointer;
   opacity: 0.8;
 }
 
@@ -1121,6 +1134,7 @@ ul li {
 }
 
 .footer__item:hover {
+  cursor: pointer;
   opacity: 0.8;
 }
 
@@ -1169,6 +1183,7 @@ ul li {
 }
 
 .footer__btn:hover {
+  cursor: pointer;
   opacity: 0.8;
 }
 
@@ -1184,6 +1199,12 @@ ul li {
   font-size: 16px;
   line-height: 30px;
   color: #22343D;
+}
+
+@media (max-width: 1350px) {
+  .nav {
+    display: none;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -1325,6 +1346,30 @@ ul li {
   }
 }
 
+@media (max-width: 768px) {
+  .benefits__cards__container {
+    flex-direction: column;
+    width: 99%;
+    margin-bottom: 15px;
+    align-items: center;
+  }
+
+  .benefits__cards {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 35px;
+    width: 32%;
+  }
+
+  .benefits-card__description {
+    width: 80%;
+  }
+
+  .benefits__button {
+    padding-left: 0;
+  }
+}
+
 @media (max-width: 320px) {
 
   .menu-btn {
@@ -1456,6 +1501,14 @@ ul li {
     width: 100%;
   }
 
+  .management__image {
+    width: 100%;
+  }
+
+  .customer__image {
+    margin-bottom: 20px;
+  }
+
   .form__title {
     min-width: 205px;
   }
@@ -1487,11 +1540,5 @@ ul li {
 
   .footer__legal {
     margin-right: 0;
-  }
-}
-
-@media (max-width: 1350px) {
-  .nav {
-    display: none;
   }
 }
