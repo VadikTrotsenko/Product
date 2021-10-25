@@ -135,18 +135,18 @@ ul li {
   top: 8px;
 }
 
-#menu-toggle:checked ~ .menu-btn > span{
+#menu-toggle:checked ~ .menu-btn > span {
   transform: rotate(45deg);
 }
-#menu-toggle:checked ~ .menu-btn > span::before{
+#menu-toggle:checked ~ .menu-btn > span::before {
   top: 0;
   transform: rotate(0);
 }
-#menu-toggle:checked ~ .menu-btn > span::after{
+#menu-toggle:checked ~ .menu-btn > span::after {
   top: 0;
   transform: rotate(90deg);
 }
-#menu-toggle:checked ~ .menubox{
+#menu-toggle:checked ~ .menubox {
   visibility: visible;
   left: 0;
 }
@@ -381,8 +381,9 @@ ul li {
   display: flex;
   flex-direction: column;
   width: 79%;
-  margin-bottom: 235px;
+  margin-bottom: 145px;
   background: url("./img/Bg\ \(1\).png") no-repeat center bottom;
+  padding-bottom: 99px;
 }
 
 .benefits__title {
@@ -514,10 +515,6 @@ ul li {
   margin-bottom: 37px;
 }
 
-.management__image {
-  width: 48%;
-}
-
 /* customer */
 
 .customer {
@@ -635,6 +632,7 @@ ul li {
   width: 100%;
   padding: 52px 0px 0px 73px;
   margin-bottom: 151px;
+  padding-top: 50px;
   background: url("./img/Bg\ \(2\).png") no-repeat top;
 }
 
@@ -697,6 +695,7 @@ ul li {
   padding: 15px 18px 14px 22px;
   box-shadow: 0px 2px 15px rgba(23, 58, 86, 0.1);
   border-radius: 26.5px;
+  background: url("./img/cloudLeftBottom.png") no-repeat center;
 }
 
 .process__btn {
@@ -802,6 +801,10 @@ ul li {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.strategies__circle:hover {
+  fill: rgb(2, 137, 122)
 }
 
 /* price */
@@ -1209,6 +1212,14 @@ ul li {
 
 @media (max-width: 1024px) {
 
+  .process__dialogs {
+    flex-direction: column;
+  }
+
+  .benefits-card__description {
+    max-width: 146px;
+  }
+
   .header__menu {
     display: flex;
     margin-left: auto;
@@ -1224,6 +1235,17 @@ ul li {
 
   .header__logo {
     margin-right: 0;
+  }
+
+  .benefits__cards__container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .benefits__cards {
+    width: 40%;
+    align-items: center;
+    margin-bottom: 25px;
   }
 
   .header__auth {
@@ -1295,7 +1317,7 @@ ul li {
   }
 
   .price__card {
-    width: 40%;
+    width: 22%;
     margin-bottom: 50px;
   }
 
@@ -1305,6 +1327,7 @@ ul li {
 
   .process {
     padding: 0;
+    padding-top: 50px;
   }
 
   .form {
@@ -1347,11 +1370,16 @@ ul li {
 }
 
 @media (max-width: 768px) {
+
   .benefits__cards__container {
     flex-direction: column;
     width: 99%;
     margin-bottom: 15px;
     align-items: center;
+  }
+
+  .strategies__text {
+    padding: 20px;
   }
 
   .benefits__cards {
@@ -1361,8 +1389,11 @@ ul li {
     width: 32%;
   }
 
+  
+
   .benefits-card__description {
     width: 80%;
+
   }
 
   .benefits__button {
@@ -1375,6 +1406,14 @@ ul li {
   .menu-btn {
     right: 30px;
   }
+
+  .introduction__title__value {
+    font-size: 28px;
+  }
+
+  .benefits__title__text {
+    font-size: 28px;
+  } 
 
   .header__wrapper {
     min-width: 90%;
@@ -1393,6 +1432,10 @@ ul li {
     align-items: center;
   }
 
+  .footer__description {
+    font-size: 11px;
+  }
+
   .get__button {
     margin-right: 0;
     margin-bottom: 30px;
@@ -1405,6 +1448,7 @@ ul li {
 
   .benefits {
     width: 80%;
+    padding-bottom: 70px;
   }
 
   .benefits__cards__container {
@@ -1502,7 +1546,10 @@ ul li {
   }
 
   .management__image {
-    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
   }
 
   .customer__image {
@@ -1514,6 +1561,12 @@ ul li {
   }
 
   .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__content {
+    display: flex;
     flex-direction: column;
     align-items: center;
   }
@@ -1536,6 +1589,16 @@ ul li {
 
   .footer__resource {
     margin-right: 0;
+  }
+
+  .process__title  {
+    padding-top: 55px;
+  }
+
+  .footer__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .footer__legal {
