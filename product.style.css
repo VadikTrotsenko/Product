@@ -96,19 +96,20 @@ ul li {
   display: none;
 }
 
-/* .main__content__wrapper {
-  width: 1110px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-} */
+.header__menu:hover {
+  opacity: 0.8;
+}
+
 
 .header__logo {
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-right: 237px;
+}
+
+.header__logo:hover {
+  opacity: 0.8;
 }
 
 .logo__image {
@@ -142,6 +143,10 @@ ul li {
   color: #22343D;
 }
 
+.nav__item:hover {
+  opacity: 0.8;
+}
+
 ._active-button {
   font-weight: 600;
 }
@@ -159,6 +164,14 @@ ul li {
   border-radius: 4px;
   margin-right: 22px;
   white-space: nowrap;
+}
+
+.header__auth:hover {
+  opacity: 0.8;
+}
+
+.header__theme:hover {
+  opacity: 0.8;
 }
 
 ._primary-btn {
@@ -232,6 +245,10 @@ ul li {
   align-items: center;
 }
 
+.watch__button:hover {
+  opacity: 0.8;
+}
+
 .watch__button__icon {
   margin-right: 8.5px;
 }
@@ -244,6 +261,10 @@ ul li {
   line-height: 24px;
   padding: 15px 41px 14px 41px;
   margin-right: 30px;
+}
+
+.get__button:hover {
+  opacity: 0.8;
 }
 
 .watch__button__value {
@@ -346,6 +367,10 @@ ul li {
   font-size: 16px;
   line-height: 24px;
   color: #FFFFFF;
+}
+
+.sing-up__button:hover {
+  opacity: 0.8;
 }
 
 /* management */
@@ -588,6 +613,10 @@ ul li {
   white-space: nowrap;
 }
 
+.process__btn:hover {
+  opacity: 0.8;
+}
+
 /* strategies */
 
 
@@ -650,6 +679,10 @@ ul li {
   color: #22343D;
   padding-left: 25px;
   margin-bottom: 25px;
+}
+
+.strategies__text:hover {
+  color: #02897A;
 }
 
 .strategies__card {
@@ -718,6 +751,39 @@ ul li {
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
   padding: 24px 75px 32px 73px;
+}
+
+.price__card:hover {
+  background: #02897A;
+}
+
+.price__card:hover .price__subtitle {
+  color: white;
+}
+
+.price__card:hover .price__subdescription {
+  color: white;
+}
+
+.price__card:hover .price__value {
+  color: white;
+}
+
+.price__card:hover .price__symbol {
+  color: white;
+}
+
+.price__card:hover .price__month {
+  color: white;
+}
+
+.price__card:hover .price__item {
+  color: white;
+}
+
+.price__card:hover .price__btn {
+  background: white;
+  color: #02897A;
 }
 
 .price__subtitle {
@@ -887,6 +953,10 @@ ul li {
   max-width: 145px;
 }
 
+.form__btn:hover {
+  opacity: 0.8;
+}
+
 /* footer */
 
 .footer {
@@ -921,12 +991,20 @@ ul li {
   margin-bottom: 20px;
 }
 
+.footer__logo:hover {
+  opacity: 0.8;
+}
+
 .footer__image {
   margin-right: 13px;
 }
 
 .footer__icon {
   margin-right: 16px;
+}
+
+.footer__icon:hover {
+  opacity: 0.8;
 }
 
 .footer__socials {
@@ -950,6 +1028,10 @@ ul li {
   font-size: 16px;
   line-height: 35px;
   color: #22343D;
+}
+
+.footer__item:hover {
+  opacity: 0.8;
 }
 
 ._active_list {
@@ -994,6 +1076,10 @@ ul li {
   line-height: 24px;
   text-align: center;
   color: #FFFFFF;
+}
+
+.footer__btn:hover {
+  opacity: 0.8;
 }
 
 .footer__description {
@@ -1098,6 +1184,10 @@ ul li {
     margin-bottom: 50px;
   }
 
+  .benefits {
+    width: 95%;
+  }
+
   .process {
     padding: 0;
   }
@@ -1195,7 +1285,15 @@ ul li {
     flex-direction: column;
     align-items: center;
     width: 99%;
-    margin-bottom: 15px;
+    margin-bottom: 50px;
+  }
+
+  .collaborative {
+    margin-bottom: 50px;
+  }
+
+  .process__image {
+    margin: 15px;
   }
 
   .benefits__button {
@@ -1212,8 +1310,19 @@ ul li {
     margin-bottom: 30px;
   }
 
+  .intro_content {
+    padding-top: 60px;
+  }
+
+  .process__dialogs {
+    width: 90%;
+    align-items: center;
+    flex-direction: column;
+  }
+
   .customer {
     width: 100%;
+    margin-bottom: 50px;
   }
 
   .intro {
@@ -1238,6 +1347,10 @@ ul li {
 
   .price__card {
     width: 50%;
+  }
+
+  .management {
+    margin-bottom: 50px;
   }
 
   .management__info {
