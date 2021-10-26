@@ -1208,6 +1208,14 @@ ul li {
   .nav {
     display: none;
   }
+
+  .header__auth {
+    display: none;
+  }
+
+  .header__theme {
+    display: none;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -1227,6 +1235,7 @@ ul li {
 
   .menu__btn {
     display: flex;
+    right: 150px;
   }
 
   .nav {
