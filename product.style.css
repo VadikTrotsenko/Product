@@ -1403,8 +1403,8 @@ ul li {
 
 @media (max-width: 320px) {
 
-  .menu-btn {
-    right: 30px;
+  .menu__btn {
+    right: 20px;
   }
 
   .introduction__title__value {
