@@ -262,7 +262,6 @@ ul li {
   align-items: center;
   max-width: 1400px;
   min-width: 320px;
-  /* padding: 0px 150px 0 145px; */
 }
 
 .intro {
@@ -384,6 +383,7 @@ ul li {
   margin-bottom: 145px;
   background: url("./img/Bg\ \(1\).png") no-repeat center bottom;
   padding-bottom: 99px;
+  background-size: 100%;
 }
 
 .benefits__title {
@@ -634,6 +634,7 @@ ul li {
   margin-bottom: 151px;
   padding-top: 50px;
   background: url("./img/Bg\ \(2\).png") no-repeat top;
+  background-size: 100%;
 }
 
 .process__content {
